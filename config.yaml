@@ -1,0 +1,13 @@
+servers:
+  - hostname: server1
+    ip: 192.168.1.101
+    password: pass123
+    services:
+      - name: app-service
+        health_check_path: /health
+  - hostname: server2
+    ip: 192.168.1.102
+    password: pass456
+    services:
+      - name: web-service
+        health_check_path: /status
